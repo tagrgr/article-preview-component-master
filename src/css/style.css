@@ -30,6 +30,7 @@ body {
 
 .container #logo {
     grid-area: logo;
+    overflow: hidden;
 }
 
 .container #logo .image {
