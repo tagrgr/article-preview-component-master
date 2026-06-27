@@ -3,15 +3,50 @@
         display: flex;
         flex-direction: column;
         margin: 0 20px;
-        
+        position: relative;
+        width: calc(100% - 40px);
     }
 
-    .header {
+    #logo {
+        border-radius: 10px 10px 0 0;
+    }
+
+    .container #content .content-info .header {
         font-size: 16px;
+        margin-bottom: 20px;
     }
 
-    .some-text {
+    .container #content .content-info .some-text {
         letter-spacing: 0.04em;
-        /* margin-bottom: 30px; */
+        margin-bottom: 30px;
+    }
+
+    .container #content .profile-state #sharing-state {
+        margin-left: auto;
+    }
+
+    .container #content .profile-state #share-tooltip {
+        position: absolute;
+        bottom: -30px;
+        left: -10px;
+        border-radius: 0 0 10px 10px;
+        justify-content: flex-start;
+        gap: 15px;
+        width: calc(100% + 70px);
+        height: 70px;
+        margin-left: -20px;
+    }
+
+    .container #content .profile-state #share-tooltip::after {
+        display: none;
+    }
+
+    .container #content .profile-state #share-tooltip p {
+        font-size: 13px;
+        letter-spacing: 0.4em;
+    }
+
+    .container #content .profile-state #share-tooltip a {
+        padding: 0;
     }
 }
